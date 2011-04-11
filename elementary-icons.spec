@@ -11,10 +11,15 @@ Source0:	%{tarname}-%{version}.tar.gz
 License:	GPLv2
 Group:		Graphical desktop/Other
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Elementary icons theme.
+
+%files
+%defattr(-,root,root)
+%{_iconsdir}/*
+
+#--------------------------------------------------------------------
 
 %prep
 %setup -q
@@ -26,11 +31,4 @@ Elementary icons theme.
 %__mkdir -p %{buildroot}%{_datadir}/icons/elementary-mono-dark
 cp -rf elementary/* %{buildroot}%{_datadir}/icons/elementary
 cp -rf elementary-mono-dark/* %{buildroot}%{_datadir}/icons/elementary-mono-dark
-
-%clean
-%__rm -rf %{buildroot}
-
-%files
-%defattr(-,root,root)
-%{_datadir}/icons/*
 
