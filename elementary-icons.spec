@@ -33,4 +33,4 @@ Elementary icons theme.
 cp -rf elementary/* %{buildroot}%{_datadir}/icons/elementary
 cp -rf elementary-mono-dark/* %{buildroot}%{_datadir}/icons/elementary-mono-dark
 #replace original icons from rosa-icons theme, because original rosa icons not property works
-cp -rf rosa-icons-replace-1.0.1/* %{buildroot}%{_datadir}/icons/elementary
+cp -rf rosa-icons-replace-1.0.3/* %{buildroot}%{_datadir}/icons/elementary
