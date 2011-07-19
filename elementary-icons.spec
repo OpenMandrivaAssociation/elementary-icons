@@ -1,14 +1,14 @@
 %define tarname	elementary-icons
 %define name	elementary-icons
 %define version	2.7.1
-%define release %mkrel 3
+%define release %mkrel 4
 
 Summary:	Elementary icons
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Source0:	%{tarname}-%{version}.tar.gz
-Source1:	rosa-icons-replace-1.0.1.tar.gz
+Source1:	rosa-icons-replace-1.0.3.tar.gz
 License:	GPLv2
 Group:		Graphical desktop/Other
 BuildArch:	noarch
