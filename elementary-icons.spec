@@ -8,7 +8,6 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Source0:	%{tarname}-%{version}.tar.gz
-Source1:	rosa-icons-replace-1.0.3.tar.gz
 License:	GPLv2
 Group:		Graphical desktop/Other
 BuildArch:	noarch
@@ -23,7 +22,7 @@ Elementary icons theme.
 #--------------------------------------------------------------------
 
 %prep
-%setup -q -a 1
+%setup -q
 
 %install
 %__rm -rf %{buildroot}
@@ -32,5 +31,3 @@ Elementary icons theme.
 %__mkdir -p %{buildroot}%{_datadir}/icons/elementary-mono-dark
 cp -rf elementary/* %{buildroot}%{_datadir}/icons/elementary
 cp -rf elementary-mono-dark/* %{buildroot}%{_datadir}/icons/elementary-mono-dark
-#replace original icons from rosa-icons theme, because original rosa icons not property works
-cp -rf rosa-icons-replace-1.0.3/* %{buildroot}%{_datadir}/icons/elementary
