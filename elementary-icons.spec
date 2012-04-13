@@ -1,7 +1,7 @@
 %define tarname	elementary-icons
 %define name	elementary-icons
 %define version	2.7.1
-%define release %mkrel 4
+%define release %mkrel 5
 
 Summary:	Elementary icons
 Name:		%{name}
@@ -22,10 +22,8 @@ Icons theme set from Elementary project.
 %install
 %{__rm} -rf %{buildroot}
 %{__mkdir} -p %{buildroot}%{_iconsdir}
-%{__mkdir} -p %{buildroot}%{_iconsdir}/elementary
-%{__mkdir} -p %{buildroot}%{_iconsdir}/elementary-mono-dark
-cp -rf elementary/* %{buildroot}%{_iconsdir}/elementary
-cp -rf elementary-mono-dark/* %{buildroot}%{_iconsdir}/elementary-mono-dark
+cp -a elementary %{buildroot}%{_iconsdir}/
+cp -a elementary-mono-dark %{buildroot}%{_iconsdir}/
 
 %files
 %defattr(-,root,root)
