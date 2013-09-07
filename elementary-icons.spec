@@ -1,9 +1,10 @@
 Summary:	Elementary icons
 Name:		elementary-icons
 Version:	2.7.1
-Release:	6
+Release:	7
 License:	GPLv2
 Group:		Graphical desktop/Other
+Url:		http://danrabbit.deviantart.com/art/elementary-Icons-65437279
 Source0:	%{name}-%{version}.tar.gz
 Source1:	rosa-icons-replace-1.0.3.tar.gz
 BuildArch:	noarch
