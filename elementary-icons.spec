@@ -1,7 +1,7 @@
 Summary:	Elementary icons
 Name:		elementary-icons
 Version:	3.1
-Release:	8
+Release:	9
 License:	GPLv2
 Group:		Graphical desktop/Other
 Url:		http://danrabbit.deviantart.com/art/elementary-Icons-65437279
@@ -18,6 +18,8 @@ Elementary icons theme.
 %install
 mkdir -p %{buildroot}%{_iconsdir}/elementary
 cp -rf * %{buildroot}%{_iconsdir}/elementary
+# gets confused with symlinks
+rm -f %{buildroot}%{_iconsdir}/elementary/apps/{48,24}/web-browser.svg
 #replace original icons from rosa-icons theme, because original rosa icons not property works
 mv -f rosa-icons-replace-1.0.3/AUTHORS *.ROSA
 cp -rf rosa-icons-replace-1.0.3/* %{buildroot}%{_iconsdir}/elementary
