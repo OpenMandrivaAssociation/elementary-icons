@@ -1,7 +1,7 @@
 Summary:	Elementary icons
 Name:		elementary-icons
 Version:	3.1
-Release:	10
+Release:	11
 License:	GPLv2
 Group:		Graphical desktop/Other
 Url:		http://danrabbit.deviantart.com/art/elementary-Icons-65437279
