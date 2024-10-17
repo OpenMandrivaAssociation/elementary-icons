@@ -4,7 +4,7 @@ Version:	3.1
 Release:	12
 License:	GPLv2
 Group:		Graphical desktop/Other
-Url:		http://danrabbit.deviantart.com/art/elementary-Icons-65437279
+Url:		https://danrabbit.deviantart.com/art/elementary-Icons-65437279
 Source0:	elementaryicons%{version}.tar.gz
 Source1:	rosa-icons-replace-1.0.3.tar.gz
 BuildArch:	noarch
